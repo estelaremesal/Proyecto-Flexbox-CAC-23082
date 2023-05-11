@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.tickets{
+    width: 100vw;
+    margin: 0 auto;
+    height:100vh;
+    display:flex;
+}
+
+.texto{
+    background: linear-gradient(to right, #082156, #0D368C); 
+    color:#fff;
+    display:flex;
+    flex-direction: column; 
+    width: 40%; 
+    height: 100%;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    font-size:25px;
+    line-height:1.5;
+}
+
+.imagen{
+    background-image:url("../assets/img/constru.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+} 
+
+/*mobile*/
+@media screen and (max-width: 767px)   {
+.tickets{
+    display: flex;
+    flex-direction: column;
+    height:initial;
+}
+
+ .texto {
+    width: 100%;
+    height: 50vh;
+}
+
+.imagen {
+     width: 100%;
+     height: 50vh;
+ }
+
+} 
+
+
+

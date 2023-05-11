@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+	
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conf. Bs As - Flexbox</title>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <!--favicon-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--kit de fontawesome-->
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+		
+    </head>
+   
+    <body class="body">
+        <!--Etiqueta semantica del encabezado de mi pagina-->    
+        <header class="header">		
+            <!--Logo de codo a codo, Titulo e hipervinculos-->
+            <div class="contenedorNav">
+                <div class="contenedorLogo">
+                    <img src="./assets/img/codoacodo.png" alt="Logo de codo a codo">
+                    <h2>Conf Bs.As.</h2>
+                </div>
+               
+                <nav class="navegacion">
+                    <ul class="listaNav">
+                        <li class="itemLista"><a class="linkNav" href="#conferencia">La conferencia </a></li>
+                        <li class="itemLista"><a class="linkNav gris" href="#oradores">Los oradores</a></li>
+                        <li class="itemLista"><a class="linkNav gris" href="#lugarFecha">El Lugar y la Fecha</a></li>
+                        <li class="itemLista"><a class="linkNav gris" href="#formulario">Conviertete en Orador</a></li>
+                        <li class="itemLista"><a class="linkNav verde" href="./pages/comprar_tickets.html">Comprar Tickets</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Link "La Conferencia"-->       
+            <section id="conferencia" class="contenedorConferencia">
+                <div class="hijoConferencia">
+                    <h1>Conf Bs As</h1>
+                    <p class="textoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con
+					                            nuestra comunidad el conocimiento y experiencia de los expertos que
+												están creando el futuro de Internet. Ven a conocer a miembros del 
+												evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
+												que tenemos para ti. Te esperamos!</p>
+                    <div class="botones">                                
+                        <a class="btn1 b-light" href="#formulario" >Quiero ser orador</a>
+                        <a class="btn1 b-tickets" href="./pages/comprar_tickets.html">Comprar Tickets</a>
+                    </div>
+                </div>
+            </section>
+
+        </header>
+
+        <!--Etiqueta semantica del contenido principal de mi pagina-->
+        <main>
+            <!--Link "Los oradores"-->
+            <section id="oradores" class="sectionOradores">
+                <p>CONOCE A LOS</p> <h1>ORADORES</h1> 
+                <!--Cards Steve Jobs, Bill Gates y Ada Lovelace-->
+                <div class="padreCards">
+                    <!--Card Steve Jobs-->                         
+                    <div class="card">
+                        <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
+                        <div class="cardBody">
+						    <a href="#" class="btn2 b-JavaScript">JavaScript</a>
+                            <a href="#" class="btn2 b-React">React</a>  
+                            <h3 class="card-title">Steve Jobs</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+                        </div>                  
+                    </div>
+                    <!--Card Bill Gates-->  
+                    <div class="card">
+                        <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
+                        <div class="cardBody">
+                            <a href="#" class="btn2 b-JavaScript">JavaScript</a>
+                            <a href="#" class="btn2 b-React">React</a>  
+                            <h3 class="card-title">Bill Gates</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+                        </div>
+                    </div>
+                    <!--Card Ada Lovelace-->  		
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
+                        <div class="cardBody"> 
+                            <a href="#" class="btn2 b-Negocios">Negocios</a>
+                            <a href="#" class="btn2 b-Startups">Startups</a> 
+                            <h3 class="card-title">Ada Lovelace</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+
+            <!--Link "El lugar y la fecha"-->
+            <section id="lugarFecha" class="containerLugarFecha">
+                <div class="imagen"></div>
+                <div class="parrafo">
+                     <h1>Bs As - Octubre</h1>
+                     <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu
+                        es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa 
+                        sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad 
+                        (aproximádamente 600km2 de superficie).</p>   
+                     <a class="btn1 b-light" href="#">Conocé más</a>
+                </div>
+            </section>
+
+            <!--Link "Conviertete en Orador"-->
+            <section id="formulario" class="sectionFormulario">
+                <p>CONVIÉRTETE EN UN </p>                
+                <h2>ORADOR</h2>
+                <h5>Anótate como un orador para dar una <span>charla ignite</span>. 
+                    Cuéntanos de qué quieres hablar!</h5>
+                <form>
+                    <div class="contenedorInputs">
+                        <input type="text" placeholder="Nombre" required class="input-50">
+                        <input type="text" placeholder="Apellido" required class="input-50">
+                        <textArea name="" id="" cols="44" rows="6" placeholder="Sobre que quieres hablar?" required class="input-100"></textArea>
+                        <h5>Recuerda incluir un titulo para tu charla.</h5>
+                        <input  type="submit" value="Enviar" class="b-Enviar">
+                    </div> 
+                </form>
+            </section>
+
+        </main>
+
+
+        <!--Etiqueta semantica del pie de mi pagina-->        
+        <footer class="footer">
+		
+            <nav class="contenedorFooter">
+                <li><a class="nav-link" href="#">Preguntas frecuentes</a></li>
+                <li><a class="nav-link" href="#">Contáctanos </a></li>
+                <li><a class="nav-link" href="#">Prensa </a></li>
+                <li><a class="nav-link" href="#">Conferencias </a></li>
+                <li><a class="nav-link" href="#">Términos y condiciones </a></li>
+                <li><a class="nav-link" href="#">Privacidad </a></li>
+                <li><a class="nav-link" href="#">Estudiantes </a></li>
+            </nav>
+			
+        </footer>
+
+    </body>
+
+</html>
